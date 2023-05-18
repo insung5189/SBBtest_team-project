@@ -5,15 +5,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-public class MainController {
-
-    @GetMapping("/sbb")
+public class HelloController {
+    @GetMapping("/hello")
     @ResponseBody
-    public String index() {
-        return "index";
-    }
-    @GetMapping("/")
-    public String root() {
-        return "redirect:/question/list";
+    public String hello () {
+        return "hello SBB";
     }
 }
